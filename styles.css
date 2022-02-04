@@ -1,0 +1,470 @@
+
+/* Table of Contents:
+    I.   Body
+    II.  Navigation Bar
+    III. Body Classes
+    IV.  Typography
+    V.   Hyperlinks
+    VI.  Footer
+*/
+
+/* ===================================================================  */
+
+
+
+/*== I. Body ==============================================*/
+
+body {
+    margin: 0px;
+    background-image: url('Resources/Background.png') ;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.body-elements {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+/*== II. Navigation Bar ====================================*/
+
+.nav-block {
+    background-color: #EACABB;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.nav-block > .nav-wrap > .nav-link-wrap a{
+    color: Black;
+}
+
+.nav-wrap > .Left-side, .Right-side > .nav-link-wrap{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrap {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrap a{
+    color: #8a8989;
+    text-decoration: none;
+    transition: color\ 0.5s;
+}
+
+.nav-link-wrap:hover {
+    border-bottom: 1px solid rgb(255, 183, 136);
+    transition: color\ 0.5s;
+}
+
+.nav-link-wrap a:hover {
+    transition: 0.5s;
+    color: rgb(248, 164, 112);
+
+}
+
+.active-nav {
+    border-bottom: 1px solid black;
+}
+
+.active-nav a {
+    color: rgb(0,0,0) !important;
+}
+
+.Left-side, .Right-side {
+    display: flex;
+}
+
+.Right-side {
+    padding: 10px
+}
+
+.logo-image img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.Left-side > h1 {
+    margin:0%;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    letter-spacing: 5px;
+}
+
+
+
+
+/*== III. Body Classes ======================================*/
+
+.content-column-wrap {
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.content-wrap, .inquiryHeader {
+    background-color: #EACABB;
+    height: max-content ;
+}
+
+
+.content-wrap-footer {
+    background-color: #EACABB;
+
+}
+
+.content-wrap-banner{
+    background-color: #424242;
+
+    height: max-content ;
+}
+
+.home-page-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px 0px;
+}
+
+.content-column-wrap img:hover{
+    background-color: #000;
+    opacity:0.75;
+    transition: 0.5s;
+}
+
+.content-wrap img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px 0px;
+}
+
+.button {
+  background-color: #E3B7A0;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 3px;
+
+}
+
+.seerates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-wrap img{
+    height: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px auto 30px auto;
+}
+
+#imgMap img{
+    margin: 0px auto 0px auto;
+}
+
+#contactlogo, #inquirylogo {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 10%;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.main-body-contents {
+    background-image: url("Resources/Background.png");
+    margin: 110px 0px 6px 0px;
+}
+
+.textbox {
+    margin: auto;
+    width: 80%;
+    text-align: left;
+    color: black;
+}
+
+
+.content-wrap section p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.container-wrap iframe{
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding:25px;
+}
+
+input[type=submit], input[type=reset], input[type=file] {
+  background-color: #E3B7A0;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+#mainfieldset {
+    margin: 20px 50px 100px 20px;
+    width: 65%;
+    padding-right: 20px;
+    border: 1px solid rgb(191, 146, 112);
+}
+
+fieldset {
+    border: 1px solid rgb(191, 146, 112);
+}
+
+textarea {
+    margin: 10px 10px 10px 0px;
+}
+
+
+
+
+
+/*== IV. Typography ======================================== */
+
+#header h1{
+    text-align: center;
+}
+
+#header2 {
+    margin-top: 90px;
+
+}
+
+#inquiryheader {
+   font-size: 45px;
+   padding-left: 20px;
+}
+
+#rcorner {
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#parFormat {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+#parPad {
+    padding: 30px;
+}
+
+#pcenter {
+    text-align: center;
+    font-size: small;
+}
+
+.textbox > a {
+    text-decoration: none;
+}
+
+#contact {
+    padding: 20px;
+    text-align: justify;
+    font-size: 12;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.shortdesc {
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.bio {
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  text-align: justify;
+  margin: 70px 0px 0px 40px;
+
+}
+
+input {
+    margin: 10px;
+}
+
+#inquiryhr {
+    width: 70%;
+    border: 2px solid rgb(113, 62, 24);
+    padding-right: 20px;
+    margin: 0px 20px;
+}
+
+#inquiryhr2 {
+    width: 65%;
+    padding-right: 20px;
+    margin: 5px 20px;
+    border: 1px solid rgb(113, 62, 24)
+}
+
+
+
+
+
+
+/*== V. hyperlinks ======================================== */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+a:visited {
+    color: rgb(191,146,112);
+}
+a:hover {
+    color: #f39842;
+}
+a:active {
+    color: #000000;
+}
+
+
+
+/*== VI. footer =========================================== */
+
+.content-wrap > .textbox-footer > .footer > ol, li{
+    margin-top: 15px 0px 0px 50px;
+    list-style: none;
+}
+
+.content-wrap > .textbox-footer > .footer h1{
+    font-size: 10px;
+}
+
+.textbox-footer {
+    padding: 20px;
+    width: 80%;
+    text-align: left;
+    color: black;
+    margin: 0px 0px 30px 20px;
+}
+/*== VII. table ============================================= */
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio img {
+  width: 100%;
+
+}
+
+table {
+  margin-left: 100px;
+
+}
+
+/*== VIII. navbar dropdown ================================= */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 0px 0px 2px 0px
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(227,183,160);
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: rgb(255,237,219);
+
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(230, 178, 148);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
